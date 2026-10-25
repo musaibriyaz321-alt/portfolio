@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Musaib Reyaz | Python & Web Developer Portfolio</title>
+<meta name="description" content="Portfolio of Musaib Reyaz, an AI learner, Python developer and web developer from Pampore, Kashmir.">
+<meta name="author" content="Musaib Reyaz">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio.css">
+
+</head>
+<body>
+
+<!-- Page loader -->
+<div id="loader"><div class="spinner"></div><p>Loading…</p></div>
+
+<!-- Background effects -->
+<div class="bg-gradient"></div>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<canvas id="particles"></canvas>
+<div id="mouse-glow"></div>
+
+<!-- NAVIGATION -->
+<header id="nav">
+  <a href="#home" class="logo">Musaib<span>.</span></a>
+  <button id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  <nav id="menu">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-text reveal slide-up">
+    <p class="hello">Hello, I'm</p>
+    <h1>Musaib <span class="grad">Reyaz</span></h1>
+    <h2><span id="typing"></span><span class="cursor">|</span></h2>
+    <!-- EDIT: short intro -->
+    <p class="intro">I build clean Python programs and responsive websites, and I'm exploring AI to turn ideas into useful tools. Always learning, always building.</p>
+    <div class="btns">
+      <!-- EDIT: put your CV file next to this page and name it Musaib-Reyaz-CV.pdf -->
+      <a href="Musaib-Reyaz-CV.pdf" download class="btn primary ripple">Download CV</a>
+      <a href="#projects" class="btn ghost ripple">View Projects</a>
+    </div>
+    <div class="socials">
+      <!-- EDIT: replace # with your profile links -->
+      <a href="https://github.com/musaibriyaz321-alt" aria-label="GitHub" title="GitHub">GH</a>
+      <a href="https://www.linkedin.com/in/musaibreyaz" aria-label="LinkedIn" title="LinkedIn">in</a>
+      <a href="https://www.instagram.com/_musaiibb__" aria-label="Instagram" title="Instagram">IG</a>
+      <a href="mailto:musaibreyaz321@gmail.com" aria-label="Email" title="Email">@</a>
+    </div>
+  </div>
+  <div class="hero-img reveal zoom-in">
+    <div class="avatar">
+      <!-- EDIT: replace with <img src="your-photo.jpg" alt="Musaib Reyaz"> -->
+      <img src="img.png" alt="Musaib Reyaz" onerror="this.outerHTML='<span class=&quot;initials&quot;>MR</span>'">
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="title reveal slide-up">About <span class="grad">Me</span></h2>
+  <div class="glass about-card reveal slide-up">
+    <p>I'm a curious and dedicated IT student from Pampore, Kashmir, passionate about Python, web development and artificial intelligence. I enjoy turning problems into simple, working solutions and keep sharpening my skills through hands-on projects.</p>
+    <ul class="info">
+      <li><b>Location:</b> Pampore, Kashmir</li>
+      <li><b>Education:</b> B.Sc IT, SP College</li>
+      <li><b>Learning at:</b> ILS Srinagar</li>
+      <li><b>Email:</b> musaibreyaz321@gmail.com</li>
+    </ul>
+    <div class="tags"><span>Python</span><span>Python Libraries</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Flask</span><span>Git</span></div>
+    <!-- EDIT: change data-count values -->
+    <div class="stats">
+      <div><b data-count="2">0</b><small>Projects</small></div>
+      <div><b data-count="10">0</b><small>Skills</small></div>
+      <div><b data-count="3">0</b><small>Certificates</small></div>
+      <div><b data-count="500">0</b><small>Learning Hours</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2 class="title reveal slide-up">My <span class="grad">Education</span></h2>
+  <div class="timeline">
+    <!-- EDIT: copy one .t-item to add more -->
+    <div class="t-item reveal slide-up"><div class="glass"><span class="year">2025 – Present</span><h3>B.Sc IT</h3><p>SP College, Srinagar. Studying core IT, programming and databases.</p></div></div>
+    <div class="t-item reveal slide-up"><div class="glass"><span class="year">Ongoing</span><h3>Skill Training</h3><p>ILS Srinagar. Learning Python, web development and AI fundamentals.</p></div></div>
+    <div class="t-item reveal slide-up"><div class="glass"><span class="year">Self Learning</span><h3>Projects &amp; Practice</h3><p>Building Flask apps, websites and data projects with Git and VS Code.</p></div></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2 class="title reveal slide-up">My <span class="grad">Skills</span></h2>
+  <div class="grid skills">
+    <!-- EDIT: copy one .skill card; change name and data-level (0-100) -->
+    <div class="skill glass reveal zoom-in"><div class="ico">🐍</div><h3>Python</h3><div class="bar"><i data-level="85"></i></div></div>
+    <div class="skill glass reveal zoom-in"><div class="ico">🌐</div><h3>HTML5</h3><div class="bar"><i data-level="90"></i></div></div>
+    <div class="skill glass reveal zoom-in"><div class="ico">🎨</div><h3>CSS3</h3><div class="bar"><i data-level="85"></i></div></div>
+    <div class="skill glass reveal zoom-in"><div class="ico">⚡</div><h3>JavaScript</h3><div class="bar"><i data-level="70"></i></div></div>
+    <div class="skill glass reveal zoom-in"><div class="ico">🧪</div><h3>Flask</h3><div class="bar"><i data-level="65"></i></div></div>
+    <div class="skill glass reveal zoom-in"><div class="ico">🐼</div><h3>Pandas</h3><div class="bar"><i data-level="70"></i></div></div>
+    <div class="skill glass reveal zoom-in"><div class="ico">🔀</div><h3>Git</h3><div class="bar"><i data-level="70"></i></div></div>
+    <div class="skill glass reveal zoom-in"><div class="ico">💻</div><h3>VS Code</h3><div class="bar"><i data-level="90"></i></div></div>
+    <div class="skill glass reveal zoom-in"><div class="ico">🤖</div><h3>AI</h3><div class="bar"><i data-level="60"></i></div></div>
+    <div class="skill glass reveal zoom-in"><div class="ico">📱</div><h3>Responsive Design</h3><div class="bar"><i data-level="85"></i></div></div>
+  </div>
+</section>
+
+<!-- PROJECTS: to add a project, copy one <article class="project"> block and paste it below the last one -->
+<section id="projects">
+  <h2 class="title reveal slide-up">My <span class="grad">Projects</span></h2>
+  <div class="grid projects" id="project-list">
+
+    <article class="project glass reveal slide-up">
+      <div class="p-img" style="--g:linear-gradient(135deg,#2563eb,#7c3aed)"><img src="images/ai-assistant.jpg" alt="AI Learning and Study Assistant" loading="lazy" onerror="this.remove()"><span>🤖</span></div>
+      <div class="p-body">
+        <h3>AI Learning and Study Assistant</h3>
+        <p>An assistant that explains topics, makes quick notes and quizzes students.</p>
+        <div class="tags"><span>Python</span><span>Flask</span><span>AI</span></div>
+        <div class="p-btns"><a href="#" class="btn primary sm ripple">Live Demo</a><a href="#" class="btn ghost sm ripple">GitHub</a></div>
+      </div>
+    </article>
+
+    <article class="project glass reveal slide-up">
+      <div class="p-img" style="--g:linear-gradient(135deg,#06b6d4,#2563eb)"><img src="images/portfolio.jpg" alt="Personal Portfolio" loading="lazy" onerror="this.remove()"><span>💼</span></div>
+      <div class="p-body">
+        <h3>Personal Portfolio</h3>
+        <p>A responsive dark-theme portfolio with glassmorphism and smooth animations.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <div class="p-btns"><a href="#" class="btn primary sm ripple">Live Demo</a><a href="#" class="btn ghost sm ripple">GitHub</a></div>
+      </div>
+    </article>
+
+    <article class="project glass reveal slide-up">
+      <div class="p-img" style="--g:linear-gradient(135deg,#7c3aed,#db2777)"><img src="images/student-system.jpg" alt="Student Management System" loading="lazy" onerror="this.remove()"><span>🎓</span></div>
+      <div class="p-body">
+        <h3>Student Management System</h3>
+        <p>Add, search, update and delete student records with a simple dashboard.</p>
+        <div class="tags"><span>Python</span><span>Flask</span><span>SQLite</span></div>
+        <div class="p-btns"><a href="#" class="btn primary sm ripple">Live Demo</a><a href="#" class="btn ghost sm ripple">GitHub</a></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- CERTIFICATES: copy one .cert to add more -->
+<section id="certificates">
+  <h2 class="title reveal slide-up">My <span class="grad">Certificates</span></h2>
+  <div class="grid certs">
+    <div class="cert glass reveal zoom-in"><div class="ico">🏆</div><h3>Python Programming</h3><p>ILS Srinagar</p><small>2025</small></div>
+    <div class="cert glass reveal zoom-in"><div class="ico">🎖️</div><h3>Web Development</h3><p>ILS Srinagar</p><small>2025</small></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="title reveal slide-up">Get In <span class="grad">Touch</span></h2>
+  <div class="contact-wrap">
+    <div class="glass reveal slide-up">
+      <h3>Contact Info</h3>
+      <p class="c-line">📧 <a href="mailto:musaibreyaz321@gmail.com">musaibreyaz321@gmail.com</a></p>
+      <p class="c-line">📞 <a href="tel:+917006725509">+91 7006725509</a></p>
+      <p class="c-line">📍 Pampore, Jammu &amp; Kashmir, India</p>
+      <div class="socials"><a href="https://github.com/musaibriyaz321-alt" aria-label="GitHub">GH</a><a href="https://www.linkedin.com/in/" aria-label="LinkedIn">in</a><a href="https://www.instagram.com/_musaiibb__" aria-label="Instagram">IG</a></div>
+      <!-- EDIT: replace this placeholder with a Google Maps <iframe> embed -->
+      <div class="map">🗺️ Google Map Placeholder</div>
+    </div>
+    <form id="contact-form" class="glass reveal slide-up">
+      <input type="text" id="f-name" placeholder="Your Name" required>
+      <input type="email" id="f-email" placeholder="Your Email" required>
+      <input type="text" id="f-sub" placeholder="Subject">
+      <textarea id="f-msg" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn primary ripple">Send Message</button>
+      <p id="form-note"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-top">
+    <a href="#home" class="logo">Musaib<span>.</span></a>
+    <div class="foot-links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+    <div class="socials"><a href="https://github.com/musaibriyaz321-alt" aria-label="GitHub">GH</a><a href="https://www.linkedin.com/in/" aria-label="LinkedIn">in</a><a href="https://www.instagram.com/_musaiibb__" aria-label="Instagram">IG</a></div>
+  </div>
+  <p>© <span id="year"></span> Musaib Reyaz. All rights reserved.</p>
+</footer>
+<button id="to-top" aria-label="Scroll to top">↑</button>
+
+<script src="portfolio.js"></script>
+</body>
+</html>
