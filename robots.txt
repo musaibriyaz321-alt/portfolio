@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-teal-sigma-hug42dhjxo.vercel.app/sitemap.xml
